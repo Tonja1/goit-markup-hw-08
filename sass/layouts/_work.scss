@@ -1,0 +1,27 @@
+.work {
+    padding-top: 0;
+}
+
+.work__list {
+    align-items: center;
+    gap: 30px;
+}
+
+.work__lable {
+    position: relative;
+}
+
+.work__lable--text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}

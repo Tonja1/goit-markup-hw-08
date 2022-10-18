@@ -1,0 +1,30 @@
+.pref__picture {
+    display: flex;
+    background-color: var(--backgr-filtr);
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.pref__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--subtitle-col);
+    margin-bottom: 10px;
+}
+
+.pref__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--txt-col);
+    margin: 0;
+}
+
+.pref__item:not(:last-child) {
+    margin-right: 30px;
+}

@@ -1,0 +1,30 @@
+.clients {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients__link {
+    fill: currentColor;
+}
+
+.clients__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: var(--icon-cl);
+    border: 1px solid var(--icon-cl);
+    border-radius: 4px;
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-funcion);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-cl);
+        border-color: var(--accent-cl);
+    }
+}
+
