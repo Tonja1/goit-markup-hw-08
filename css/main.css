@@ -54,16 +54,46 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 480px) {
+  .section {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+  }
 }
 
 h1,
@@ -468,36 +498,13 @@ label {
           justify-content: center;
   gap: 30px;
 }
-
-.clients__link {
-  fill: currentColor;
-}
-
-.clients__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 170px;
-  height: 92px;
-  color: var(--icon-cl);
-  border: 1px solid var(--icon-cl);
-  border-radius: 4px;
-  -webkit-transition-property: color, border;
-  transition-property: color, border;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--timing-funcion);
-          transition-timing-function: var(--timing-funcion);
-}
-.clients__items:hover, .clients__items:focus {
-  color: var(--accent-cl);
-  border-color: var(--accent-cl);
+@media screen and (min-width: 1200px) {
+  .clients {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
 }
 
 .footer {
@@ -1018,12 +1025,19 @@ label {
 }
 
 .subtitle {
-  font-size: 36px;
+  font-weight: 700;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--subtitle-col);
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .subtitle {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .socials {
