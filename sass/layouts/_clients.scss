@@ -1,34 +1,57 @@
 .clients {
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-basis: calc((100% - 2 * 15px) / 2);
     gap: 30px;
     padding-bottom: 60px;
-
-    // mobile - 480px
     
-        @media screen and (min-width: 480px) and (max-width: 767px) {
-        flex-basis: calc((100% - 2 * 15px) / 2);
-        }
-
-
+    
     // tablet styles - 768px
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: -30px;
+        margin-bottom: -30px;
+        }
+
+    // desktop styles - 1200px
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        margin-right: 0;
+        margin-bottom: 0;
         }
     }
+
+.clients__item {
+    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    // mobile - 480px
+    
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 2 * 15px) / 2);
+    }
+
+    // tablet styles - 768px
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    }
+
+        // desktop styles - 1200px
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
+       
+
+}
        
 
 .clients__link {
-    fill: currentColor;
-}
-
-.clients__items {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,6 +95,10 @@
         border-color: var(--accent-cl);
     }
  
+}
+
+.clients__img {
+    fill: currentColor;
 }
 
 
