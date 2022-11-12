@@ -5,7 +5,11 @@
 }
 
 .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     gap: 30px;
+
 }
 
 .team__item {
@@ -13,6 +17,15 @@
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
         0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 2 * 15px)/2);
+        }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 6 * 15px)/4);
+    }
+
 }
 
 .team__person {
