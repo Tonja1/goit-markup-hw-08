@@ -38,7 +38,35 @@
             <li><a class="nav__link" href="">Контакти</a></li>
           </ul>
         </nav>
-
+        <button class="openmobmenu" type="button" data-menu-open>
+          <svg class="burgeropen" width="40" height="40">
+            <use
+              href="./images/sprite.svg#icon-menu_24px"
+              width="24"
+              height="16"
+            ></use>
+          </svg>
+        </button>
+        <div class="mobile-menu is-open" data-menu>
+          <div class="container mobile-menu-container">
+            <button class="closemobmenu" type="button" data-menu-close>
+              <svg width="40" height="40">
+                <use href="./images/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <ul class="mobmenu__navlink">
+              <li class="mobmenu__navlist">
+                <a href="./index.html" class="mobmenu__link">Студія</a>
+              </li>
+              <li class="mobmenu__navlist">
+                <a href="./portfolio.html" class="mobmenu__link">Портфоліо</a>
+              </li>
+              <li class="mobmenu__navlist">
+                <a href="#" class="mobmenu__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <!-- Контактні дані -->
 
         <ul class="contacts__list">
@@ -794,4 +822,5 @@
     </footer>
   </body>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </html>

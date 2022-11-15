@@ -92,3 +92,32 @@
         }
 
 }
+
+.openmobmenu {
+
+    @media screen and (max-width: 767px) {
+    background-color: rgba(0, 0, 0, 0);
+        border: 0;
+        padding: 0;
+        line-height: 0;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    
+}
+
+.closemobmenu {
+@media screen and (max-width: 767px) {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        padding: 0;
+        line-height: 0;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        fill: var(--subtitle-col);
+    }
+}
