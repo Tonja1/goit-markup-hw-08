@@ -58,15 +58,14 @@ body {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
-    max-width: 480px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -89,17 +88,10 @@ body {
 
 .section {
   width: 100%;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 @media screen and (min-width: 480px) {
   .section {
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section {
-    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -504,6 +496,11 @@ label {
   margin-bottom: 10px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .pref__title {
+    text-align: left;
+  }
+}
 
 .pref__text {
   font-size: 14px;
@@ -592,8 +589,8 @@ label {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .team__list {
@@ -676,6 +673,7 @@ label {
         flex-wrap: nowrap;
     margin-right: 0;
     margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -976,6 +974,11 @@ label {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__form--input {
+    width: 358px;
   }
 }
 
@@ -1377,7 +1380,8 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.17;
   font-weight: 500;
   gap: 10px;
   -webkit-box-align: center;
@@ -1391,6 +1395,12 @@ label {
           transition-duration: 250ms;
   -webkit-transition-timing-function: var(--timing-funcion);
           transition-timing-function: var(--timing-funcion);
+}
+@media screen and (min-width: 1199px) {
+  .contacts__links {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .contacts__links:hover, .contacts__links:focus {
   color: var(--accent-cl);
@@ -1474,12 +1484,13 @@ label {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--subtitle-col);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .subtitle {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -1539,6 +1550,12 @@ label {
     opacity: 0;
     visibility: hidden;
     pointer-events: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu {
+    width: 480px;
+    height: 796px;
   }
 }
 @media screen and (min-width: 768px) {

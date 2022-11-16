@@ -32,6 +32,10 @@ padding: 0;
     color: var(--subtitle-col);
     margin-bottom: 10px;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;  
+    }
 }
 
 .pref__text {

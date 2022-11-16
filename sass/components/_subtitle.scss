@@ -5,11 +5,12 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--subtitle-col);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     // desktop styles - 1200px
         @media screen and (min-width: 1200px) {
             font-size: 36px;
             line-height: 1.16;
+            margin-bottom: 50px;
         }
 }
