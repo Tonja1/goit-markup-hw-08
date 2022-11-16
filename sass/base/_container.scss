@@ -27,6 +27,13 @@
 }
 }
 
+.mobile-menu-container {
+    @media screen and (max-width: 767px) {
+        padding-top: 43px;
+        padding-bottom: 43px;
+    }
+}
+
 .section {
     width: 100%;
     padding-top: 94px;

@@ -14,6 +14,10 @@
   --timing-funcion: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+a {
+  text-decoration: none;
+}
+
 .hidden {
   position: absolute;
   width: 1px;
@@ -73,6 +77,13 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu-container {
+    padding-top: 43px;
+    padding-bottom: 43px;
   }
 }
 
@@ -325,6 +336,11 @@ label {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: var(--subtitle-col);
+}
+@media screen and (min-width: 1200px) {
+  .registr__form__title {
+    padding-bottom: 12px;
+  }
 }
 
 .registr__form__group {
@@ -1219,6 +1235,9 @@ label {
     fill: var(--subtitle-col);
   }
 }
+.closemobmenu :hover .closemobmenu :focus {
+  color: var(--accent-cl);
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav {
@@ -1509,14 +1528,6 @@ label {
 }
 
 @media screen and (max-width: 767px) {
-  .is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -1537,6 +1548,14 @@ label {
 }
 
 @media screen and (max-width: 767px) {
+  .is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .burgeropen {
     display: block;
     position: absolute;
@@ -1549,7 +1568,7 @@ label {
 
 @media screen and (max-width: 767px) {
   .mobmenu__navlink {
-    margin-bottom: auto;
+    margin-bottom: 202px;
   }
 }
 
@@ -1569,5 +1588,68 @@ label {
     text-align: left;
     letter-spacing: 0.02em;
     color: var(--subtitle-col);
+  }
+  .mobmenu__link :hover, .mobmenu__link :focus {
+    color: var(--accent-cl);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobmenu__contacts-list {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobmenu__contacts:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobmenu-contact {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--txt-col);
+  }
+  .mobmenu-contact :hover, .mobmenu-contact :focus {
+    color: var(--accent-cl);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobmenu__social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobmenu__social-link:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+}
+
+.mobmenu__social-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--accent-cl);
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .mobmenu__social-item {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=main.css.map */

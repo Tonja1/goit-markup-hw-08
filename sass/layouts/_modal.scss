@@ -61,6 +61,10 @@ label {
     letter-spacing: 0.03em;
     margin-bottom: 12px;
     color: var(--subtitle-col);
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 12px;
+    }
 }
 
 .registr__form__group {
