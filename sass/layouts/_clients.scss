@@ -3,15 +3,15 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
     
     
     // tablet styles - 768px
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
-        margin-top: -30px;
-        margin-bottom: -30px;
+        // margin-top: -30px;
+        // margin-bottom: -30px;
         }
 
     // desktop styles - 1200px

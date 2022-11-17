@@ -65,7 +65,7 @@ body {
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
-    width: 100%;
+    width: 481px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -91,11 +91,30 @@ body {
 }
 @media screen and (min-width: 480px) {
   .section {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section {
     padding-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .section {
+    padding-bottom: 94px;
+  }
+}
+
+.pref {
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .pref {
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pref {
     padding-top: 94px;
   }
 }
@@ -224,7 +243,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .section-hero {
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 118px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img/studio-desktop-1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/studio-desktop-1x.jpg);
   }
@@ -518,6 +537,9 @@ label {
   .pref__item {
     margin: 0 auto;
   }
+  .pref__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .pref__item {
@@ -536,9 +558,6 @@ label {
   }
 }
 
-.work {
-  padding-top: 0;
-}
 @media screen and (max-width: 1199px) {
   .work {
     position: absolute;
@@ -591,6 +610,12 @@ label {
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__list {
@@ -654,7 +679,6 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
-  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients {
@@ -663,8 +687,6 @@ label {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: -30px;
-    margin-bottom: -30px;
   }
 }
 @media screen and (min-width: 1200px) {

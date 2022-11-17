@@ -12,7 +12,7 @@
     
 // mobile - 480px
 @media screen and (min-width: 480px) and (max-width: 767px){
-    width: 100%;
+    width: 481px;
 }
    
 // tablet styles - 768px
@@ -38,16 +38,30 @@
     
     // mobile - 480px
     @media screen and (min-width: 480px) {
-        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
 // tablet styles - 768px
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        // padding-bottom: 60px;
+        padding-top: 60px;
     }
 
 // desktop styles - 1200px
   @media screen and (min-width: 1200px) {
-      padding-top: 94px;
+      padding-bottom: 94px;
   }
+}
+.pref {
+width: 100%;
+
+    
+    // tablet styles - 768px
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 60px;
+    }
+
+    // desktop styles - 1200px
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+    }
 }
