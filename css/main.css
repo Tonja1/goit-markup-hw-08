@@ -1539,6 +1539,14 @@ label {
 }
 
 @media screen and (max-width: 767px) {
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -1565,14 +1573,6 @@ label {
 }
 
 @media screen and (max-width: 767px) {
-  .is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .burgeropen {
     display: block;
     position: absolute;
@@ -1585,7 +1585,7 @@ label {
 
 @media screen and (max-width: 767px) {
   .mobmenu__navlink {
-    margin-bottom: 202px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1669,4 +1669,18 @@ label {
   .mobmenu__social-item {
     font-size: 18px;
   }
+}
+
+.flexible {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

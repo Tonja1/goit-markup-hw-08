@@ -1,3 +1,10 @@
+.mobile-menu.is-open {
+    @media screen and (max-width: 767px) {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
 .mobile-menu {
 
     @media screen and (max-width: 767px) {
@@ -24,15 +31,6 @@
     
 }
 
-.is-open {
-    @media screen and (max-width: 767px) {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-    }
-}
-
-
 .burgeropen {
     @media screen and (max-width: 767px) {
     display: block;
@@ -46,7 +44,7 @@
 .mobmenu__navlink {
 @media screen and (max-width: 767px) {
     
-    margin-bottom: 202px;
+    margin-bottom: 50px;
 }
 
 }
@@ -137,5 +135,12 @@
     @media screen and (min-width:480px) and (max-width: 767px) {
     font-size: 18px;
     }
+}
+
+.flexible {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
